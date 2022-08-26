@@ -9,7 +9,7 @@ p{
 }
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-    color: #c2b7b7
+    color: #b4da42
     margin: 0;
 }
 
@@ -46,7 +46,7 @@ main {
 }
 a:hover{ 
     color: #00ff2ac5;
-    scale: 69%;
+    scale: 420%;
     transition:.2ms;
 
 }
