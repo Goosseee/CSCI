@@ -1,21 +1,62 @@
 /* You're welcome to change any of this! */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0px;
+html {
+    margin:auto;
     font-family: Arial, sans-serif;
-}
-header, section {
-    padding: 20px;
+    background-color:#FFFFFF;
+    color:white;
 }
 p, li {
     line-height: 1.5em;
 }
 
+div{
+    text-align:center;
+    font-size: 24pt;
+    justify-content: center;
+    color:#EFD28D
+
+}
+h1{
+    padding:20px;
+    background:linear-gradient(90deg,#A30000,#ff7700) ;
+    height:10vh;
+
+}
+
+.tiles{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    height:55vh;
+}
+.tutorials{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    padding: 10px;
+    background-color:#004777;
+}
+
+.homework{
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    padding:10px;
+    background-color:#00afb5;
+}
+
+.lectures{
+    background-color:#1a8386;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  
+
+}
+
 #inspiration {
-    background-color: #F0F0F0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #004777;
+    height:10vh;
+    padding-top:20px
+}
+a{
+    color:white;
 }
