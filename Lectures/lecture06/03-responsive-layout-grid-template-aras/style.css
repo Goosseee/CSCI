@@ -12,7 +12,7 @@ ul {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #333;
+  color: rgb(255, 255, 255);
   background-color: snow;
   margin: 0 auto;
   max-width: 1000px;
@@ -33,24 +33,63 @@ body {
 /* Task 3 */
 
 .task-3.container {
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: 10% 10% 70% 10%;
+  border: solid 1px black;
+  height: 100vh;
+  row-gap: 10px;
+  column-gap: 10px;
+
 }
 
 .task-3 .header {
+  background: linear-gradient(90deg,#3e51c8,#ffffff) ;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .task-3 .navigation {
+  background: linear-gradient(90deg,#3e51c8,#ffffff) ;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  
 }
 
 .task-3 .ads {
+  background: linear-gradient(90deg,#3e51c8,#ffffff) ;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .task-3 .sidebar {
+  background: linear-gradient(90deg,#3e51c8,#ffffff) ;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .task-3 .main {
+background: linear-gradient(90deg,#3e51c8,#ffffff) ;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 
 .task-3 .footer {
+  background: linear-gradient(90deg,#3e51c8,#ffffff) ;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
 }
 
 
