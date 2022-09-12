@@ -1,0 +1,194 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family:amatic;
+    src: url(AmaticSC-Regular.ttf);
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+ul, ul:hover, ul:visited{ 
+    text-decoration: none; 
+    list-style: none;
+}
+
+header{ 
+    background-color: rgb(39, 84, 111); 
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height:55vh;
+}
+
+nav{
+    display:flex;
+    justify-content:right;
+    text-decoration: none;
+    background-color:rgba(56, 104, 133, 0.816); 
+}
+
+ul{ 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display:flex; 
+    justify-content: space-between; 
+    align-items: center;
+ 
+}
+
+a, a:hover, a:visited, a:link{
+    text-decoration:none;
+    color:white;
+    padding: 5px;
+}
+
+.picture{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#profile-pic{ 
+    border-radius: 360px;
+    padding: 35px;
+}
+
+h1{ 
+    display:grid;
+    justify-content: center;
+    font-size:24pt;
+    font-family:amatic;
+    text-decoration:none;
+    letter-spacing: 6px;
+}
+
+h2{ 
+    font-family:amatic;
+    font-size: 24pt;
+    letter-spacing:1px;
+    width:90vw;
+    padding-left:100px;
+}
+
+#about{ 
+    display:flex;
+    flex-wrap:wrap;
+    padding-left: 100px;
+    padding-top:30px;
+    height:45vh;
+}
+
+#about p{ 
+    padding-left:100px;
+}
+
+#about h2{ 
+    font-family: amatic;
+    font-size: 24pt;    
+    width:70vw;
+    padding-left:100px;
+}
+
+p{ 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#projects{
+    background-color:rgba(230, 222, 222, 0.832);
+    height:110vh;
+    padding-left:100px;
+    padding-top:30px;
+}
+
+.project-holder{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    padding:15px;
+}
+
+.card p{ 
+    width:300px;
+
+}
+
+#contact{ 
+    padding-left:100px;
+    padding-right: 100px;
+    justify-content:center;
+    height:70vh;
+}
+
+#contact p{ 
+    width:60%;
+}
+
+.contact-details{ 
+    display:grid; 
+    grid-template-columns: .667fr .333fr; 
+    column-gap: 45px;
+}
+
+#contact-info .row{ 
+    display:grid; 
+    grid-template-columns: 40px auto;
+    grid-template-rows: 30% auto;
+
+}
+
+form .row{
+    margin-bottom: 20px;
+}
+
+.row1{ 
+    display:grid; 
+    grid-template-columns: 40% auto;
+    column-gap: 20px;
+}
+
+input, textarea{ 
+    padding:10px;
+    background-color:rgb(234, 234, 234);
+    border:none;
+}
+
+#submit{ 
+    background:teal;
+    border:none;
+    border-radius: 4px;
+    color:white;
+}
+#message{ 
+    width:100%;
+    margin:0;
+}
+.row p {
+    margin:0; 
+    margin-bottom: 25px;
+}
+
+#contact-info{ 
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+
+footer{ 
+    display:flex;
+    height:20vh;
+    justify-content: center; 
+    align-items: center;
+    background: lightgray
+}
+
+
+
