@@ -1,0 +1,146 @@
+@font-face{
+    font-family:octarine;
+    src: url(octarine/OctarineFree/Octarine-Light.otf);
+}
+
+body{
+    margin:0;
+}
+head{
+    border:solid 1px black;
+}
+nav{
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    font-family:octarine;
+    font-weight:400;
+    font-style:normal;
+
+    background-color:#72a276;
+    height:13vh;
+}
+
+h1{
+    padding:15px;
+    margin-left:10px;
+    margin-top:2;
+    margin-bottom:2;
+    border:solid 2px white;
+    border-radius:90px;
+    background-color:#72a276;
+    color:white;
+
+}
+
+a, a:visited, a:link{
+    margin-left:5px;
+    text-decoration:none;
+    color:white;
+}
+
+ul{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:25px;
+    margin-right:10px;
+    display:flex;
+    flex-direction: rows;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    text-decoration:none;
+}
+
+li{
+    display:flex; 
+    justify-content:center;
+    background-color:#72a276; 
+
+
+    border:solid 2px white; 
+    border-radius:90px;
+    margin:4px;
+    padding:5px;
+}
+
+li:hover, h1:hover{
+    filter:saturate(150%);
+
+}
+
+.color{
+
+    height:77vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: octarine;
+    background-image:url(images/mountains-firewatch-green-forest-wallpaper-preview.jpg);
+    background-size:cover;
+}
+#h2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:8vh;
+}
+
+#h2 > h2{
+    margin:0;
+}
+
+.colors{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.card{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    width:20vw;
+    height:67vh;
+    opacity:.8;
+}
+
+.card:hover{ 
+    scale:120%;
+    opacity:1;
+}
+#card1{
+    background-color:#A0eec0;
+}
+#card2{
+    background-color:#8AE9c1; 
+}
+#card3{
+    background-color:#86cd82;
+}
+#card4{
+    background-color:#72a276;
+}
+#card5{
+    background-color:#666b6a;
+}
+
+.card > p{
+    margin:5px;
+}
+
+footer{
+    display:flex;
+    justify-content:center; 
+    align-items:center; 
+    background-color:#727575;
+    color:white;
+    font-family:octarine;
+    height:10vh
+}
+
+footer > p{
+    font-family:octarine;
+
+
+}
