@@ -64,11 +64,14 @@ li{
     border-radius:90px;
     margin:4px;
     padding:5px;
+    transition-property:all;
+    transition:.75s;
 
 
 }
 
 li:hover, h1:hover{
+    scale:110%; 
     filter:saturate(150%);
 
 }
@@ -91,6 +94,7 @@ li:hover, h1:hover{
 
 #h2 > h2{
     margin:0;
+    z-index:999999;
 }
 
 .colors{
