@@ -110,8 +110,7 @@ li:hover, h1:hover{
     width:20vw;
     height:67vh;
     opacity:.8;
-    transition-property:all;
-    transition: .75s;
+    transition:all .75s;
 }
 
 .card:hover{ 
@@ -252,7 +251,7 @@ h3{
     background-color:#A0eec0;
     opacity:.5;
     transition-property:all;
-    transition: .75s;
+    transition: .55s;
 }
 
 .icard:hover{ 
