@@ -122,6 +122,8 @@ h1 {
     word-spacing: 1.225ch; /* 3.5x letter-spacing */
     font-weight: 600;
     font-size:150%;
+    margin-left: 25vw;
+    margin-right: 25vw;
 
 }
 @media(min-width:700px) { /* only apply on wider screens... */

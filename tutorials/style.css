@@ -117,6 +117,8 @@ h2{
     justify-content:center;
     font-family:octarine;
     padding: 2px;
+    padding-top:5px;
+    padding-bottom:5px;
     border:solid 2px;
     margin-left: 30vw;
     margin-right: 30vw;
