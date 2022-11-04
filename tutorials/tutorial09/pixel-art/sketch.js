@@ -85,5 +85,16 @@ function drawRow (row, topX, topY, pixelWidth,
         i++;
     }
 
-
 }
+
+// let the color equal whatever number is stored in the given row 
+// let i = 0;
+// while (i < row.length) { 
+
+// }
+// drawAlien (row, topX, topY, d){
+//     let x = row[0];
+//     let y = row[1];
+//     let d = row[2];
+
+// }
