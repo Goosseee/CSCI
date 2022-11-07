@@ -1,0 +1,140 @@
+@font-face{
+    font-family:octarine;
+    src: url(../fonts/octarine/OctarineFree/Octarine-Light.otf);
+}
+
+body{
+    margin:0;
+}
+head{
+    border:solid 1px black;
+}
+nav{
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    font-family:octarine;
+    font-weight:400;
+    font-style:normal;
+
+    background-color:#72a276;
+    height:13vh;
+
+    position:fixed;
+    width:100vw;
+
+    z-index:1000000;
+}
+
+h1{
+    padding:15px;
+    margin-left:10px;
+    margin-top:2;
+    margin-bottom:2;
+    border:solid 2px white;
+    border-radius:90px;
+    background-color:#72a276;
+    color:white;
+
+}
+
+a, a:visited, a:link{
+    margin-left:5px;
+    text-decoration:none;
+    color:white;
+}
+
+ul{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:25px;
+    margin-right:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    text-decoration:none;
+}
+
+li{
+    display:flex; 
+    justify-content:center;
+    background-color:#72a276; 
+
+
+    border:solid 2px white; 
+    border-radius:90px;
+    margin:4px;
+    padding:5px;
+}
+
+li:hover, h1:hover{
+    filter:saturate(150%);
+
+}
+
+strong{
+    background-color:#A0eec0;
+    border-radius:90px;
+    padding:10px;
+    color:rgb(0, 0, 0);
+}
+
+#projects{
+    padding-top:94.235px;
+    height:90vh;
+    background-image:url(../images/istockphoto-1294158579-170667a.jpg);
+    background-size:cover;
+
+
+}
+#projects > ul{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+}
+#projects > ul > li{
+    font-family:octarine;
+    padding:20px;
+    background-color:#72a276;
+    transition-property:all;
+    transition:1s;
+    height:30px;
+    width:auto;
+    margin:10px;
+}
+
+#projects > ul > li:hover{
+    scale:130%;
+    filter:saturate(150%)
+}
+
+h2{
+
+    display:flex;
+    justify-content:center;
+    font-family:octarine;
+    padding: 2px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:solid 2px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    width:auto;  
+}
+
+footer{
+    display:flex;
+    justify-content:center; 
+    align-items:center; 
+    background-color:#727575;
+    color:white;
+    font-family:octarine;
+    height:10vh
+    
+}
+
+footer > p{
+    font-family:octarine;
+}
