@@ -25,7 +25,7 @@ document.querySelector('#tracks').innerHTML= ''
 
 for (i=0;i<5; i++) {
 template = `<section class="track-item preview" onClick="playSong('${data[i].id}')">
-<img src="${data[i].album.image_url}">
+<img src="${data[i].album.image_url}" alt="album cover for the song: ${data[i].name} by ${data[i].artist.name}">
 <i class="fas fa-play play-track" aria-hidden="true"></i>
 <div class="label">
     <h2>  ${data[i].name}</h2>
@@ -59,12 +59,29 @@ function playSong(id){
 
 async function getAlbums (term) {
     const albumEndpoint = baseURL + "?q=" + term + "&type=album";
-    // console.log(albumEndpoint);
+    console.log(albumEndpoint);
     
     const data = await fetch(albumEndpoint).then(response => response.json());
-    // console.log(data);
-};
+    console.log(data);
 
+    document.querySelector('#albums').innerHTML= ''
+    for (i=0;i<10; i++) {
+    template = `<section class="album-card" id="2lATw9ZAVp7ILQcOKPCPqp">
+    <div>
+        <img src="${data[i].image_url}" alt ="album image of ${data[i].name}">
+        <h2>${data[i].name}</h2>
+        <div class="footer">
+            <a href="${data[i].spotify_url}" target="_blank">
+                view on spotify
+            </a>
+        </div>
+    </div>
+</section>`
+
+
+document.querySelector("#albums").insertAdjacentHTML('beforeend',template);
+};
+}
 async function getArtist (term) {
     const artistEndpoint = baseURL + "?q=" + term + "&type=artist";
     // console.log(artistEndpoint);
@@ -73,9 +90,9 @@ async function getArtist (term) {
     // console.log(data);
     // console.log(data[0].name, data[0].image_url);
 
-    const template = `<h1>Top Result:</h1>
+    const template = `
     <section class="artist-card">
-    <img src=${data[0].image_url} >
+    <img src=${data[0].image_url} alt="image of: ${data[0].name}">
     <h1> ${data[0].name}</h1>
     <div class="footer">
     <a href="${data[0].spotify_url}" target="_blank">
