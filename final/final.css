@@ -25,6 +25,11 @@ nav h1{
     padding-left:10px; 
 }
 
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
 nav ul { 
     padding-right: 10px;
 }
@@ -32,12 +37,8 @@ nav ul {
 /* Image Tiles */
 
 .tiles{
-
-    margin-bottom:15px;
-    background-color:#152852;
-
-    max-width:100vw;
-
+    position:relative;
+    background-color:#475c88;
     display:flex;
     justify-content: center; 
     align-items: center; 
@@ -46,8 +47,12 @@ nav ul {
 }
 
 #tile1{ 
+    position:relative;
+    max-height:50%;
     margin-top:10px; 
-    max-width:100vw;
+    max-width:85vw;
+    height:auto;
+
     background-color:#5f2e96;
     display:flex; 
     justify-content:space-between; 
@@ -62,14 +67,36 @@ nav ul {
     width:600px;
 }
 
-#tile img:hover{ 
-    mask:#152852;
+.overlay1{ 
+    position:absolute;
+    top:0;
+    bottom:0; 
+    left:0;
+    right:0;
+    height: 100%; 
+    width:0;
+    opacity:0;
+    transition: .5s ease; 
+    background-color:#152852;
+
+    display:flex;
+    justify-content: center; 
+    align-items:center;
 }
 
-#tile2{ 
-    margin-top:10px; 
+#tile1:hover .overlay1{ 
+    opacity:1;
+    width:100%;
+}
 
-    max-width:100vw;
+
+/* Tile 2 */
+#tile2{ 
+
+    margin-top:10px; 
+    max-height:50%;
+    max-width:85vw;
+
     background-color:#5f2e96;
     display:flex; 
     justify-content:space-between; 
@@ -84,6 +111,27 @@ nav ul {
     width:600px;
 }
 
+.overlay2{ 
+    position:absolute;
+    top:0;
+    bottom:0; 
+    left:0;
+    right:0;
+    height: 100%; 
+    width:310px;
+    opacity:0;
+    transition: .5s ease; 
+    background-color:#152852;
+
+    display:flex;
+    justify-content: center; 
+    align-items:center;
+}
+
+#tile2:hover .overlay2{ 
+    opacity:1;
+    width:100%;
+}
 /* Footer */
 
 footer{
