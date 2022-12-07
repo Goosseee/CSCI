@@ -91,13 +91,13 @@ main {
     margin:0px;
 }
 
-input[type="checkbox"]:checked {
+.projects input[type="checkbox"]:checked {
     background-color:#202020;
     z-index: 10000000;
     margin-top:10vh;
     position:relative;
 }
-input[type="checkbox"]:checked ~ .icon-angle-down {
+.projects input[type="checkbox"]:checked ~ .icon-angle-down {
     z-index:5000000;
     position:absolute;
     color:white;
@@ -219,6 +219,7 @@ ul .four{
 /* Sidebar */
 
 .sidebar{
+    margin:0;
     left:0;
     max-width:100vw;
     list-style:none;
@@ -256,7 +257,7 @@ ul .four{
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 40px;
+    top: 20px;
     left: 20px;
     z-index: 2;
     display: flex;

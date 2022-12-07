@@ -83,7 +83,19 @@ footer {
 /* Part A: Left Navigation */
 /***************************/
 
-/* Your Code Here */
+#sidebar{ 
+    display:flex
+}
+
+#sidebar h1{
+    margin-left:10px;
+    top:0;
+}
+
+#sidebar a{
+    margin: 10px;
+
+}
 
 
 
@@ -91,7 +103,39 @@ footer {
 /* Part B: Header & Nav Styling */
 /********************************/
 
-/* Your Code Here */
+header{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:right;
+    flex-direction:row;
+}
+
+header a{ 
+    display:flex; 
+    justify-content: center;
+    align-items:center;
+    padding-left:15px;
+    padding-right:15px;
+    border: solid 1px white;
+    border-radius:90px;
+    margin:10px;
+    color:darkgray;
+}
+
+header a #profile{
+    background-color:#222;
+}
+
+nav{ 
+    display:flex; 
+    flex-direction:row;
+    align-items:center;
+}
+
+nav a{
+    margin:10px;
+    padding-bottom:15px;
+}
 
 
 
@@ -101,9 +145,86 @@ footer {
 /* Part C: Artists Panel */
 /*************************/
 
-/* Your Code Here.
-   For the desktop view, there should be 5 cards per row.
-*/
+#featured-content{
+    padding:10px;
+    flex-wrap: wrap; 
+    display:flex; 
+    flex-direction:row; 
+    justify-content:space-between;
+
+}
+
+#featured-content .artist-card{
+    display:flex; 
+    justify-content: center; 
+    align-items:center; 
+
+    padding-bottom:40px; 
+    border-radius:5%;
+    margin:auto; 
+    max-height:50%;
+    max-width:19%;
+    padding:10px;
+    background-color:rgb(40, 39, 39)
+}
+
+#featured-content .artist-card + div{
+    flex-direction:column;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#featured-content .artist-card img{ 
+    height:50%;
+    width:80%;
+    border-radius: 50%;
+
+}
+
+#featured-content .card-footer{
+
+    max-height:auto;
+    display:grid;
+    grid-template-columns:80% 20%;
+    grid-template-rows: 80% auto;
+
+}
+#featured-content .card-footer button{
+    opacity:0;
+    border-radius: 50%; 
+    height:30px;
+    width:30px;
+    border: none;
+    background-color:limegreen;
+    color:white;
+
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-end: 2;
+    grid-row-end:3;
+  
+
+}
+
+#featured-content .card-footer h2{ 
+    grid-column-start:1; 
+    grid-column-end:3;
+    grid-row-end: 1;
+    grid-row-end:3;
+    font-size:small;
+    margin:0px;
+}
+
+#featured-content .card-footer p{ 
+    grid-column-start:1; 
+    grid-column-end:3;
+    grid-row-end: 1;
+    grid-row-end:3;
+    font-size:x-small;
+    margin:0px;
+}
 
 
 
@@ -121,10 +242,29 @@ footer {
         Tablet Display: 3 cards per row!
     
     */
+    #featured-content .artist-card{
+        max-width:30%
+    }
 }
 
 
 @media screen and (max-width: 700px) {
+    body{
+        display:flex; 
+        flex-direction:column;
+    }
+
+    #sidebar{ 
+        display:none
+    }
+
+    header #upgrade{ 
+        display:none;
+    }
+
+    #featured-content .artist-card{
+        max-width:48%
+    }
     /* Mobile Display 
         * 2 cards per row
         * The aside panel and "Upgrade" button should no longer be visible.

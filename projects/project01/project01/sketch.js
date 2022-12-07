@@ -94,6 +94,7 @@ function draw() {
         a1.x = -100;
     }
     drawAsteroid(a1.x, a1.y, a1.width);
+    
     a2.x += a2.speed;
     if (a2.x == 1600){
         a2.x = -100;
