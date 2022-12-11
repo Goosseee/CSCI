@@ -1,0 +1,222 @@
+body{
+    background-image:url(../1_images/cafe.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  
+  
+  
+  
+  /* navbar Stuff */
+  nav{  
+      padding:none;
+      top:0;
+      margin:0;
+      left:0;
+      position:fixed;
+      width:100%;
+      z-index:100000000;
+      border-bottom:solid #d4dfe2 1px;
+  
+  }
+   .nav-container{ 
+      background-color:#C0AF98;
+      margin:0px;
+      height:12vh;
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      flex-direction:row;
+  }
+  
+  .nav-container #options { 
+  
+      display:flex;
+      height:100%;
+      width:100%;
+  }
+  
+  .nav-container #options ul { 
+      padding:0px;
+      display:flex;
+      flex-direction:row;
+      margin:0px;
+      height:100%;
+      width:100%;
+      align-items:center;
+      list-style: none;
+      justify-content:space-between;
+  
+      border-right:solid #d4dfe2 1px;
+      border-left:solid #d4dfe2 1px;
+  }
+  
+  .nav-container #options li { 
+      z-index:99;
+      display:flex;
+      justify-content:center;
+      height:100%;
+      width:100%;
+  
+  
+  }
+  .nav-container #options a{
+      display:flex;
+      align-items: center;
+      height:100%;
+      text-decoration:none;
+      color:white; 
+  }
+  
+  ul .one{
+      background-color:#6d655d;
+  }
+  
+  ul .two{ 
+      background-color:#DDD7C9;
+  }
+  
+  ul .three{ 
+      background-color:#CAC2A6;
+  }
+  ul .four{ 
+      background-color:#C0AF98;
+  }
+  
+  
+   .nav-container #options li:hover{
+      transition: linear .5s;
+      z-index:100;
+   }
+  
+  /* Sidebar */
+  
+  .sidebar{
+      margin:0;
+      left:0;
+      max-width:100vw;
+      list-style:none;
+      display:flex;
+      justify-content:space-between;
+      flex-direction: column;
+  }
+  .sidebar ul{
+      list-style:none;
+      text-decoration:none;
+  }
+  .sidebar li{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:100%;
+      border:solid rgb(46, 44, 44) 1px;
+      border-top:none;
+  }
+  .sidebar li:hover{
+      transition:ease-in .5s;
+      opacity:120%;
+      background-color:#202020;
+  }
+  
+  .sidebar a{
+      color:white;
+      text-decoration:none;
+      font-size:24pt;
+  }
+  
+  
+  .nav-container  .hamburger-lines {
+      display: block;
+      height: 26px;
+      width: 32px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .nav-container .checkbox {
+      position: absolute;
+      display: block;
+      margin:0;
+      height: 32px;
+      width: 32px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    .nav-container .hamburger-lines .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #d4dfe2;
+    }
+  
+    .nav-container .sidebar {
+      margin-top: 100vh;
+      z-index:1000000;
+      height: 88vh;
+      width: 100vw;
+      transform: translate(-150%);
+  
+      /* padding-top:60px;
+      padding-bottom:60px; */
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      transition: transform 0.8s ease-in-out;
+      text-align: center;
+      opacity:80%;
+      background-color:#403f41;
+    }
+    
+    .nav-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+    
+    .nav-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    .nav-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+  
+    .nav-container input[type="checkbox"]:checked ~ .sidebar {
+      z-index:100000;
+      width:100vw;
+      transition:linear .8s;
+      transform: translateX(0);
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(45deg);
+      transition:linear .5s;
+      background-color:white;
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+      transition:linear .5s;
+      background-color:white;
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-45deg);
+      transition:linear .5s;
+      background-color:white;
+    }
+  
+    .nav-container input[type="checkbox"]:checked ~ #options{
+      display:none;
+    }
