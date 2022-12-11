@@ -1,164 +1,11 @@
 body{
-  overflow:hidden;
-    margin:0;
-    font-family: 'Open Sans', sans-serif;
-    background-color:#445E42;
-}
-
-main {
-    background-color:#445E42;
-  }
-
-.projects{
-    margin-top:12vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-}
-
-.cs{
-    margin-top:10px;
-    background-image:url(../Images/house.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-  
-
-    mask-image: url(../Images/circle-15.svg);
-    mask-size: 100vw;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    color:white;
-    display:flex;
-    height:86vh;
-    width:44vw;
-    opacity:100%;
-    border-radius:50%;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-}
-
-.cs .container{
-    position:absolute;
-    width:400px;
-    display:flex; 
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-
-.cs h1{
-    display:flex;
-    font-size:auto;
-    height:100%;
-    width:100%;  
-}
-
-.cs .icon-angle-down{
-    height:24px;
-    width:15px;
-    position:absolute;
-    z-index: 5000;
-    color:white;
-    opacity:0;
-}
-
-.cs .checkbox{
-    z-index:100;
-    top:0;
-    position:absolute;
-    opacity:0;
-    width:15px;
-    height: 24px; 
-    background-color:#202020;
-}
-
-/* CSCI Projects section */
-
-.projects #csprojects{
-    z-index:100000;
-    width:100vw;
-    height: 0vh;
-    display: flex;
-    flex-direction: column;
-    margin-left: -0px;
-    transition: transform 0.8s ease-in-out;
-    opacity:0%;
-    background-color:#7694AB;
-}
-
-#csprojects p{
-    margin:0px;
-}
-
-#csprojects a{ 
-  text-decoration:none;
-
-}
-
-#csprojects .container{
-  display:flex; 
-  justify-content:center; 
-  align-items:center;
-  flex-direction:column;
-  margin:10px;
-  background-color:#98BE72;
-  width:50%;
-  height:80%;
+  background-image:url(../images/71952a1e08645f98eec2749670403ad7.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
 
 
-  #fatwo ul{
-    display:flex; 
-    flex-direction:column;
-    list-style:none;
-  }
-
-
-/* Display Toggle */
-.projects input[type="checkbox"]:checked {
-    background-color:#202020;
-    z-index: 10000000;
-    margin-top:10vh;
-    position:relative;
-}
-
-.projects input[type="checkbox"]:checked ~ .icon-angle-down {
-    z-index:5000000;
-    position:absolute;
-    color:white;
-    size:40pt;
-    opacity:100;
-    padding-top:24px;
-    margin-top:10vh;
-    top:0;
-
-    background-color: #d0cf83; 
-    border-radius:50%;
-    height:24px; 
-    width:24px; 
-    display:flex; 
-    justify-content:center; 
-    align-items:center;
-}
-
-.projects input[type="checkbox"]:checked ~ h1 {
-    transition:linear .8s;
-    background-color:#202020;
-    height:auto;
-    padding:10px;
-    opacity:90%;
-  }
-
-.projects input[type="checkbox"]:checked ~ #csprojects {
-    opacity:100%;
-    z-index:1000000;
-    height:80vh;
-    transition:ease-in-out .8s;
-  }
 
 /* navbar Stuff */
 nav{  
@@ -169,11 +16,11 @@ nav{
     position:fixed;
     width:100%;
     z-index:100000000;
-    border-bottom:solid #d3d297 1px;
-}
+    border-bottom:solid #d4dfe2 1px;
 
+}
  .nav-container{ 
-    background-color:#445E42;
+    background-color:#3f617D;
     margin:0px;
     height:12vh;
     display: flex; 
@@ -183,6 +30,7 @@ nav{
 }
 
 .nav-container #options { 
+
     display:flex;
     height:100%;
     width:100%;
@@ -199,8 +47,8 @@ nav{
     list-style: none;
     justify-content:space-between;
 
-    border-right:solid #d3d297 1px;
-    border-left:solid #d3d297 1px;
+    border-right:solid #d4dfe2 1px;
+    border-left:solid #d4dfe2 1px;
 }
 
 .nav-container #options li { 
@@ -209,6 +57,8 @@ nav{
     justify-content:center;
     height:100%;
     width:100%;
+
+
 }
 .nav-container #options a{
     display:flex;
@@ -219,19 +69,20 @@ nav{
 }
 
 ul .one{
-    background-color:#445E42;
+    background-color:#63adc9;
 }
 
 ul .two{ 
-    background-color:#D0CF83;
+    background-color:#D4dfe2;
 }
 
 ul .three{ 
-    background-color:#98BE72;
+    background-color:#475b68;
 }
 ul .four{ 
-    background-color:#7694AB;
+    background-color:#3f617f;
 }
+
 
  .nav-container #options li:hover{
     transition: linear .5s;
@@ -249,12 +100,10 @@ ul .four{
     justify-content:space-between;
     flex-direction: column;
 }
-
 .sidebar ul{
     list-style:none;
     text-decoration:none;
 }
-
 .sidebar li{
     display:flex;
     align-items:center;
@@ -263,7 +112,6 @@ ul .four{
     border:solid rgb(46, 44, 44) 1px;
     border-top:none;
 }
-
 .sidebar li:hover{
     transition:ease-in .5s;
     opacity:120%;
@@ -275,6 +123,7 @@ ul .four{
     text-decoration:none;
     font-size:24pt;
 }
+
 
 .nav-container  .hamburger-lines {
     display: block;
@@ -307,7 +156,7 @@ ul .four{
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #D0CF83;
+    background: #d4dfe2;
   }
 
   .nav-container .sidebar {
@@ -341,6 +190,7 @@ ul .four{
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
+
 
   .nav-container input[type="checkbox"]:checked ~ .sidebar {
     z-index:100000;

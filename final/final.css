@@ -1,11 +1,19 @@
 body{ 
+  overflow:scroll;
     background-color:#152852;
     margin:0; 
     padding: none; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 main{ 
     margin:0; 
     padding: none; 
+}
+
+body::-webkit-scrollbar {
+  opacity:0;
+  display: none;
 }
 
 /* Navbar Formattnig */
@@ -150,7 +158,7 @@ ul .five{
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #0e2431;
+    background: #FFe373;
   }
 
   .nav-container .sidebar {
@@ -222,19 +230,31 @@ ul .five{
   #welcome{
     position:relative;
     display:flex;
-    height:100vh;
+    flex-direction:column;
+ 
+
+    height:200vh;
   }
 
   #welcome h1{
     font-size:48pt;
     color:white;
-    margin-top:12vh;
-    margin-left: 7vh;
+    margin-top:13vh;
     display:flex;
     justify-content:center;
     align-items:center;
     border:solid 1px;
+    width:50%;
     height:50px;
+  }
+
+  #welcome .container{ 
+
+  }
+
+  #welcome .container img{ 
+    height:75%;
+    width:20%;
   }
 
 /* Image Containers */
@@ -282,6 +302,14 @@ body * {
     /* white-space: nowrap; */
     width: 50vw;
     padding: 20px;
+  }
+
+  .text img{
+    left:0;
+    border-radius:50%; 
+    height:200px; 
+    width:200px;
+    opacity:100;
   }
 
   #reflection{

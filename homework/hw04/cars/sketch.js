@@ -34,13 +34,13 @@ function draw() {
   
     c1.x += c1.speed;
     if (c1.x == 1600){
-        c1.x == -100;
+        c1.x = -100;
         console.log("yay!");
     }
 
     c2.x -= c2.speed;
     if (c2.x == -100){
-        c2.x == 1600;
+        c2.x = 1600;
         console.log("yay!");
     }
     drawCar(c1.x, c1.y, c1.width, c1.color);
